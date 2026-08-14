@@ -30,6 +30,7 @@ Create one or more finished artworks from a photograph. Let the user choose a me
 - Use a single meaningful accent hue when the source supports one; never add detached color decoration.
 - Treat an internal working title as a disposable semantic check, not a reusable prompt constant. Derive it from the current photo, do not render it unless requested, and never reuse a prior image's title.
 - Avoid oil-paint styling, generic vintage decoration, arbitrary marks, logos, watermarks, fabricated metadata, and promotional text.
+- Treat the Skill and its generated artworks as intended for personal, educational, research, and non-commercial use unless the relevant rights holder grants separate permission.
 
 ## Branch independence
 

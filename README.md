@@ -111,7 +111,7 @@ Artwork generated with this Skill is intended for personal, educational, researc
 - Users must also follow the terms of the model or image-generation service used by the host platform.
 - A source-code license does not override photograph, privacy, publicity, trademark, or artwork rights.
 
-The repository is still under development and does not yet include its final public-release license. Before publication, add a repository-level source license and a separate artwork notice so software permissions and artwork restrictions remain unambiguous.
+This project currently does not use a separate `LICENSE` file. Unless the relevant rights holder grants explicit permission, the repository does not grant rights for commercial use, sale, sublicensing, or commercial redistribution.
 
 ## Structure
 
