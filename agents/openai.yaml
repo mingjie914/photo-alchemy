@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Alchemy"
+  short_description: "Turn ordinary photos into distinctive source-aware art"
+  default_prompt: "Use $photo-alchemy to transform this photo with abstraction, extend, or reduction, according to my request."
