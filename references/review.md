@@ -26,7 +26,6 @@ Review at normal size and thumbnail size. Passing work needs no regeneration.
 - A person, when important, is neither erased nor rebuilt as a body diagram; attitude or emotional pressure survives without requiring anatomical completeness.
 - The forms are few, purposeful, and specific enough that the result is not generic decoration.
 - When color is added or materially shifted, it supports the artistic proposition instead of merely matching the photograph.
-- The result remains a full artwork without a visible title unless the user explicitly requests one.
 
 ## `extend` gate
 

@@ -45,7 +45,7 @@ Resolve a compact Color Note:
 - **contrast:** intended value and chroma against neighboring forms;
 - **attachment:** the source-derived form, interval, path, or pressure point it belongs to;
 - **material and footprint:** printed block, dry ink, translucent field, paper form, or another fitting treatment and its approximate visual share;
-- **removal test:** if removing the color changes nothing important, redesign or omit it.
+- **structural necessity:** mentally neutralize the color; if hierarchy, movement, and tension still read the same, omit it or give it a real compositional task.
 
 Keep a small accent subordinate. Use a larger color passage only when color itself carries a principal spatial structure, and reduce competing detail accordingly. Adding no new accent is always valid.
 

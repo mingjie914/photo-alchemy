@@ -85,7 +85,7 @@ During development or comparison, request all methods explicitly:
 $photo-alchemy method=all
 ```
 
-Without a method, the Skill may select the direction that best serves the photograph.
+Without a method, the Skill selects one branch from the strongest source evidence: indispensable photographic truth (`extend`), a dominant perceptual event (`abstraction`), or a source-specific relationship that can survive redraw (`reduction`).
 
 ## Workflow and output
 

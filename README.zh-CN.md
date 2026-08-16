@@ -85,7 +85,7 @@ $photo-alchemy method=reduction
 $photo-alchemy method=all
 ```
 
-如果没有指定方法，Skill 可以根据照片选择更合适的方向。
+如果没有指定方法，Skill 会从照片最强的依据中选择一个分支：不可替代的摄影事实对应 `extend`，主导画面意义的感知事件对应 `abstraction`，能够在重绘后仍保持特异性的核心关系对应 `reduction`。
 
 ## 工作流程与输出
 

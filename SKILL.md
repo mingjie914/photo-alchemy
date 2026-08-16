@@ -28,6 +28,7 @@ Resolve conflicts in this order:
    - what to retain, merge, release, translate, and leave blank;
    - palette and material opportunities that can serve the proposition.
 2. Read [references/branches.md](references/branches.md), select the requested or most suitable method, and resolve its Method Brief.
+   When no method is named, choose from the strongest source evidence: use `extend` when a truthful photographic anchor is indispensable; `abstraction` when a perceptual event carries the meaning without requiring recognizability; or `reduction` when one essential relationship and a few anchors can remain specific after descriptive reality is redrawn. Choose one; do not blend or generate all methods unless asked.
 3. Choose the output ratio from the source orientation and composition. Never force a preset poster ratio.
 4. Read [references/prompt-compiler.md](references/prompt-compiler.md). Compile a separate three-part generation prompt for each method and verify that its required fields are resolved.
 5. Generate each selected method from the original photograph only. Do not use another artist's output or a prior result as a visual reference unless the user explicitly supplies it for that purpose.
@@ -49,7 +50,7 @@ Resolve conflicts in this order:
 - Allow purposeful omission, recomposition, exaggeration, and palette shift when they strengthen the artwork without replacing the source's meaning.
 - Use color as structure or emotional action. It may resonate with, compress, or deliberately counterpoint the source; never add detached color decoration.
 - Treat an internal working title as a disposable semantic check, not a reusable prompt constant. Derive it from the current photo, do not render it unless requested, and never reuse a prior image's title.
-- Avoid oil-paint styling, generic vintage decoration, and arbitrary marks. Do not add or fabricate logos, watermarks, credits, metadata, or promotional text. Existing marks inside a truthful `extend` anchor remain source pixels rather than a new design layer.
+- Avoid generic painterly rendering, vintage filters, and other preset-style treatments that are not source-derived, as well as arbitrary marks. Do not add or fabricate logos, watermarks, credits, metadata, or promotional text. Existing marks inside a truthful `extend` anchor remain source pixels rather than a new design layer.
 - Treat the Skill and its generated artworks as intended for personal, educational, research, and non-commercial use unless the relevant rights holder grants separate permission.
 
 ## Branch independence
