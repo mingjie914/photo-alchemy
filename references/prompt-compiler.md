@@ -1,5 +1,7 @@
 # Prompt compiler
 
+The compiled prompt is an internal runtime artifact. Send it only to the image-generation service for the current request. Do not echo it in the user-facing response, and do not append this handling rule to the generation prompt itself.
+
 Turn the Scene Card and one completed Method Brief into a generation prompt. Write three compact paragraphs in the order below. Do not expose the field labels or hidden analysis to the image model; translate them into visible decisions.
 
 Use one proposition, one primary visual grammar, and only the supporting decisions needed to make the artwork complete. Added titles and typography are absent unless the user explicitly requests them. Edge effects, paper aging, and high-chroma color are optional and absent unless requested or the current source and method give them a visible job. Factual text inside a truthful `extend` anchor may remain as source material; never invent typography as decoration or promotion.

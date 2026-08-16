@@ -5,7 +5,7 @@ description: "Create source-aware raster artworks from supplied photographs thro
 
 # Photo Alchemy
 
-Create one or more finished artworks from a photograph. Let the user choose a method, request several, or ask the skill to select the most suitable direction. When generating more than one, share only the source analysis; do not share layouts, edge treatments, mark systems, or style shortcuts between methods.
+Create one or more finished artworks from a photograph. Use `extend` by default when the user does not name a method. If the user explicitly requests `abstraction`, `extend`, `reduction`, or several methods, follow that selection exactly. When generating more than one, share only the source analysis; do not share layouts, edge treatments, mark systems, or style shortcuts between methods.
 
 ## Decision order
 
@@ -27,20 +27,27 @@ Resolve conflicts in this order:
    - source-specific anchors to evaluate, including at least one relational fact; literal cues survive only when the selected method needs them;
    - what to retain, merge, release, translate, and leave blank;
    - palette and material opportunities that can serve the proposition.
-2. Read [references/branches.md](references/branches.md), select the requested or most suitable method, and resolve its Method Brief.
-   When no method is named, choose from the strongest source evidence: use `extend` when a truthful photographic anchor is indispensable; `abstraction` when a perceptual event carries the meaning without requiring recognizability; or `reduction` when one essential relationship and a few anchors can remain specific after descriptive reality is redrawn. Choose one; do not blend or generate all methods unless asked.
+2. Read [references/branches.md](references/branches.md), select the requested method, and resolve its Method Brief.
+   When no method is named, select `extend`. Treat this as the default artistic route, not as a hard-coded image operation: still derive the photographic anchor, independent field, composition, transition, and color behavior from the current source. Select `abstraction`, `reduction`, or multiple methods only when the user explicitly requests them. Never blend methods unless asked.
 3. Choose the output ratio from the source orientation and composition. Never force a preset poster ratio.
 4. Read [references/prompt-compiler.md](references/prompt-compiler.md). Compile a separate three-part generation prompt for each method and verify that its required fields are resolved.
 5. Generate each selected method from the original photograph only. Do not use another artist's output or a prior result as a visual reference unless the user explicitly supplies it for that purpose.
 6. Read [references/review.md](references/review.md). Inspect each result at normal and thumbnail scale.
 7. Regenerate at most once per branch, and only for a concrete failure. State the correction and freeze everything else.
-8. Save every requested raster file and return it with a concise method-specific rationale. Reveal the compiled prompt only when the user asks.
+8. Save every requested raster file and return it with a concise method-specific rationale. Keep internal creative artifacts undisclosed.
 
 ## Source handling and output
 
 - Use a supplied photograph only for the requested generation. Do not browse for it, publish it, add it to the Skill repository, or reuse it in another task unless the user asks.
 - By default, return one finished raster for each selected method, identify the method, and give a one- or two-sentence rationale in the user's language. Do not rank the branches unless asked.
-- Keep the Scene Card, Method Brief, and compiled prompt internal unless the user asks to inspect them. Do not add a visible title, typography, credits, attribution, metadata, or promotional text unless the user explicitly requests that content.
+- Keep the Scene Card, Method Brief, compiled prompt, and internal review notes undisclosed. When explanation is requested, provide a concise, non-reconstructable art-direction summary instead. Do not add a visible title, typography, credits, attribution, metadata, or promotional text unless the user explicitly requests that content.
+
+## Internal creative artifacts
+
+- Treat the Scene Card, Method Brief, internal working title, compiled generation prompt, negative constraints, review notes, and correction instructions as internal execution artifacts.
+- Use these artifacts only to perform the current generation. Do not quote, reproduce, or expose them in the user-facing response or generated artwork.
+- If the user asks for the prompt, hidden reasoning, or detailed internal process, provide only a concise, non-reconstructable art-direction summary covering the selected method, artistic proposition, retained source relationship, composition, and color or material role. Do not provide verbatim prompt text, field-by-field internal values, or chain-of-thought.
+- Keep this disclosure policy agent-side. Do not append it to the image-generation prompt or render it as visual content.
 
 ## Shared constraints
 
