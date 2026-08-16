@@ -29,7 +29,7 @@ It is an Agent Skill for source-aware artistic reinterpretation rather than a fi
 - Preserve relationships before surface detail.
 - Derive composition, color, rhythm, and supporting marks from the supplied photograph.
 - Keep the three methods visually and materially independent.
-- Avoid fixed layouts, copied visual signatures, hard-coded titles, decorative filler, logos, watermarks, and promotional text.
+- Avoid fixed layouts, copied visual signatures, hard-coded titles, and decorative filler. Do not add or fabricate logos, watermarks, credits, metadata, or promotional text; existing marks inside a truthful `extend` anchor remain source pixels.
 - Review each result at normal and thumbnail size, then make at most one targeted correction for a concrete failure.
 
 ## Installation
@@ -91,16 +91,21 @@ Without a method, the Skill may select the direction that best serves the photog
 
 The Skill:
 
-1. identifies the subject or event, dominant axis, spatial relationships, palette, semantic minimum, and removable detail;
-2. compiles an independent contract for the selected method;
-3. chooses an adaptive output ratio from the source composition;
-4. generates from the original photograph rather than another method's result;
-5. checks semantic integrity, composition, method separation, and visible defects;
-6. returns the finished raster image with a concise method-specific rationale.
+1. identifies the essential source relationship, decisive visual facts, visual weight, quiet areas, source anchors, palette opportunities, and removable detail;
+2. resolves a compact method-specific brief for `abstraction`, `extend`, or `reduction`;
+3. compiles the brief into a three-part image prompt covering proposition, method construction, and color/reproduction boundaries;
+4. chooses an adaptive output ratio from the source composition;
+5. generates from the original photograph rather than another method's result;
+6. checks semantic integrity, composition, method separation, and visible defects;
+7. returns the finished raster image with a concise method-specific rationale.
 
-The full generation prompt is not part of the default response.
+Each selected method produces one finished raster identified by method, plus a one- or two-sentence rationale in the user's language. The Scene Card, Method Brief, and full generation prompt remain internal unless requested. The Skill adds no title, typography, credits, attribution, metadata, or promotional text unless the user explicitly asks for that content.
 
 The aim is not to make every photograph grand. It is to find the overlooked relationship that makes this photograph singular.
+
+## Source handling
+
+The supplied photograph is used only for the requested generation. The Skill does not browse for it, publish it, add it to the repository, or reuse it in another task unless the user asks. A host platform may still send the image to its configured image-generation service, so that service's privacy and data terms also apply.
 
 ## Commercial-use policy
 
@@ -124,10 +129,12 @@ photo-alchemy/
 │   └── openai.yaml
 └── references/
     ├── branches.md
+    ├── prompt-compiler.md
     └── review.md
 ```
 
 - `SKILL.md`: triggers, shared workflow, and method separation.
 - `references/branches.md`: method-specific creative contracts.
+- `references/prompt-compiler.md`: the shared three-part prompt contract and method-specific material boundaries.
 - `references/review.md`: quality gates and targeted-correction rules.
 - `agents/openai.yaml`: OpenAI interface metadata.

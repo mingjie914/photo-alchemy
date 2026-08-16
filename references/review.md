@@ -2,42 +2,57 @@
 
 Review at normal size and thumbnail size. Passing work needs no regeneration.
 
+## Contract gate
+
+- The result obeys the selected method's photographic-material boundary.
+- The proposition, source anchors, primary grammar, attention geometry, and intentional omissions resolved in the Method Brief are visible in the result.
+- Color performs its stated role and remains attached to a real structure, or the work intentionally succeeds without an added accent.
+- The result reads as one finished artwork rather than an unresolved mixture of prompt alternatives.
+
 ## Shared gate
 
-- The semantic minimum remains recognizable.
-- The composition has one clear entry, movement, and quiet exit.
-- Every accent and supporting mark performs a visible job.
+- The result stands on its own as an artwork and embodies one discernible proposition.
+- Its connection to the source is specific without becoming reconstruction.
+- The composition has a clear hierarchy, movement, and enough quiet space.
+- Every accent and supporting mark strengthens the proposition rather than merely preventing ambiguity.
 - No branch has borrowed another branch's layout or material grammar.
-- No logo, watermark, fabricated metadata, or promotional material appears.
+- No added or generated logo, watermark, credit, fabricated metadata, or promotional material appears. Existing marks inside a truthful `extend` anchor remain source pixels rather than added design elements.
+- No added title, typography, credits, or attribution appears unless the user explicitly requested it; factual text inside a truthful `extend` anchor remains source material.
 
 ## `abstraction` gate
 
 - The perceptual event is stronger than literal object depiction.
-- Small identity anchors are stable and not over-faceted.
-- The source palette is transformed rather than arbitrarily replaced.
-- The result remains a full artwork without a visible title.
+- The source's expressive center is felt through relation, rhythm, pressure, interval, light, or mass rather than enumerated as objects.
+- A person, when important, is neither erased nor rebuilt as a body diagram; attitude or emotional pressure survives without requiring anatomical completeness.
+- The forms are few, purposeful, and specific enough that the result is not generic decoration.
+- When color is added or materially shifted, it supports the artistic proposition instead of merely matching the photograph.
+- The result remains a full artwork without a visible title unless the user explicitly requests one.
 
 ## `extend` gate
 
-- The retained photograph is truthful and includes enough context.
-- The photo boundary is not a fitted subject cutout.
-- The extension is source-derived but materially independent.
+- The retained photography is truthful and works as a deliberate anchor, not a fitted subject cutout.
+- Photography and the new field create a productive tension or continuation.
+- The new field changes the composition or meaning; it is not only cleaned, restyled, blurred, or enlarged background.
+- Omitted or compressed source material has become a materially independent visual idea.
 - The transition does not default to a recognizable reference template.
-- Accent color is structurally connected, not isolated decoration.
+- When accent color is used, it is structurally connected rather than isolated decoration.
 
 ## `reduction` gate
 
 - No photographic pixels remain.
-- Gesture, relationship, and material response remain specific.
-- Reduction removed photographic description without removing expressive information or emptying the visual field.
+- The result has an independent proposition rather than reading as a simplified copy of the photograph.
+- The essential source relationship remains specific through a few chosen anchors.
+- Reduction removed descriptive reality without collapsing into an empty icon.
 - The subject is neither a sealed dark slab nor an over-segmented construction.
-- The scene contains one environment-response system, not zero and not several.
-- At normal size, the environment provides a secondary reading while remaining quieter than the semantic nucleus.
+- Material response, environment, and supporting detail appear only when they deepen the proposition.
+- Omission and negative space feel authored rather than unfinished.
 
 ## Correction format
 
 Use one sentence:
 
-`Correct only [observed failure]; keep [composition, semantic anchors, palette, and all passing elements] unchanged.`
+`Correct only [observed failure]; keep [composition, source anchors, palette, and all passing elements] unchanged.`
 
 Do not rewrite the entire creative direction for a local defect.
+
+After one targeted regeneration, review once more. If any required contract or quality gate still fails, report that the branch did not pass instead of continuing to polish or silently presenting it as complete.
