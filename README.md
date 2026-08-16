@@ -2,68 +2,115 @@
 
 [简体中文](./README.zh-CN.md)
 
-Most photographs preserve what was seen. Some also hold a gesture, an interval, a color memory, or a tension that has not yet found its final form.
+### Find the artwork already latent in the photograph.
 
-Photo Alchemy looks for that latent character and turns an ordinary photograph into something singular. It does not disguise the source with a preset style. It reinterprets the relationships already inside the image so the familiar can be seen again—and no longer feel ordinary.
+A photograph carries more than its visible subjects. It holds intervals, direction, visual weight, color memory, and relationships that may not yet have found their final form.
 
-It is an Agent Skill for source-aware artistic reinterpretation rather than a filter, fixed style preset, or literal trace.
+Photo Alchemy reads those latent structures and rebuilds them as an original artwork. It is not a preset filter, a fixed house style, or a mechanical trace. The source remains the reason for every decision, while the finished work is free to become something of its own.
 
-## One photograph, three ways of seeing
+*Created and art-directed by **少年老程***
 
-- `abstraction` asks what remains when recognizable forms loosen and the image becomes rhythm, force, interval, and color.
-- `extend` asks where the photograph wants to continue beyond its existing boundary.
-- `reduction` asks what becomes clearer when incidental description falls away and the essential relationship remains.
+## Selected works
 
-## Methods at a glance
+The works below are finished `extend` examples. They are not layout recipes: each begins with a different source relationship and allows the photographic truth to meet a newly constructed material field.
 
-| Method | Source pixels in the result | Purpose |
+### Gesture against the field
+
+| A turn gathers the surrounding snow into pressure and direction. | A small rider gives scale to an otherwise open field. |
+| :---: | :---: |
+| ![Snowboarder turning through a layered abstract snow field](examples/snowboard-turn-extend.png) | ![Snowboarder crossing an open snow field extended by sparse horizontal marks](examples/snowboarder-open-snowfield-extend.png) |
+
+### Passage within a frame
+
+| The passenger becomes the quiet center of a layered interior. | Street, wires, traffic, and dusk are compressed into a single passage. |
+| :---: | :---: |
+| ![White dog inside a car framed by pale green and charcoal material layers](examples/white-dog-passenger-extend.png) | ![Dusk street and overhead wires held inside a converging paper corridor](examples/city-dusk-corridor-extend.png) |
+
+### Light as structure
+
+| A narrow beam opens a resting place inside dense green. | The tower's upward pull continues into color, material, and sky. |
+| :---: | :---: |
+| ![Seated figure in a forest framed by layered green forms and sunlight](examples/sunlit-forest-bench-extend.png) | ![Red broadcast tower extended through blue white and red material fields](examples/red-broadcast-tower-extend.png) |
+
+These examples show one current path, not the visual limit of the Skill. `abstraction` and `reduction` follow different image logic and do not inherit the collage language shown here.
+
+## Current creative paths
+
+Photo Alchemy is one creative system. Its methods are different routes through the same source, not a fixed bundle of three outputs.
+
+| Method | Source pixels in the result | Creative purpose |
 | --- | --- | --- |
-| `abstraction` | No | Translate the dominant perceptual event into a complete abstract artwork. |
-| `extend` | Yes | Preserve a truthful photographic field and extend it through an independent material language. |
-| `reduction` | No | Redraw the scene through selective semantic and visual reduction while retaining expressive structure. |
+| `abstraction` | No | Translate the dominant perceptual event into a complete abstract artwork. Recognizability may dissolve into rhythm, pressure, interval, mass, and color. |
+| `extend` | Yes | Preserve a truthful photographic field and let an independent material language continue, counterbalance, or reframe it. |
+| `reduction` | No | Reconstruct the scene around its essential source relationship while releasing incidental description. |
 
-`reduction` is a method name, not an instruction to lower resolution or minimize every visual layer.
+`reduction` is a method name, not an instruction to lower resolution or strip every visual layer.
 
-## Design principles
+If no method is named, the Skill chooses from the strongest evidence in the photograph: indispensable photographic truth suggests `extend`, a dominant perceptual event suggests `abstraction`, and a source-specific relationship that can survive redraw suggests `reduction`.
 
-- Preserve relationships before surface detail.
-- Derive composition, color, rhythm, and supporting marks from the supplied photograph.
-- Keep the three methods visually and materially independent.
-- Avoid fixed layouts, copied visual signatures, hard-coded titles, and decorative filler. Do not add or fabricate logos, watermarks, credits, metadata, or promotional text; existing marks inside a truthful `extend` anchor remain source pixels.
-- Review each result at normal and thumbnail size, then make at most one targeted correction for a concrete failure.
+## From source to artwork
 
-## Installation
+The process is consistent without becoming a template:
 
-### Codex
+1. **Read the relation** — identify the subject, interval, direction, weight, or tension that governs how the image is seen.
+2. **Set the intention** — decide what must remain, what may loosen, and what the new work should make more present.
+3. **Recompose the field** — choose a method and rebuild form, color, material, scale, and quiet space around that intention.
+4. **Resolve the work** — review semantic integrity, visual hierarchy, method separation, and visible defects; correct only a concrete failure.
 
-Copy the complete `photo-alchemy` folder to a Codex skills directory:
+The internal Scene Card, Method Brief, prompt compiler, and review gates support this process without imposing a fixed ratio, paper treatment, title system, or house palette.
 
-```text
-~/.codex/skills/photo-alchemy/
-```
+## Start creating
 
-On Windows, the usual location is:
+### Requirements
 
-```text
-%USERPROFILE%\.codex\skills\photo-alchemy\
-```
+The host environment needs:
 
-Start a new task after installation so the Skill can be discovered.
-
-### Other Agent platforms
-
-The core workflow uses the portable `SKILL.md` plus relative `references/` files. Agent Skills-compatible platforms may import the folder or a ZIP package according to their own installation process. The host must provide:
-
-- image input and visual analysis;
+- image input and visual inspection;
 - reference-image-aware raster generation or editing;
-- access to the bundled reference files;
+- access to the bundled `references/` files;
 - permission to save and return generated images.
 
-`agents/openai.yaml` contains OpenAI-specific interface metadata and may be ignored by other platforms.
+Image quality and source preservation still depend on the model available in the host environment.
 
-## Usage
+### Install for Codex
 
-Supply one photograph, then choose a method:
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/mingjie914/photo-alchemy.git `
+  "$env:USERPROFILE\.codex\skills\photo-alchemy"
+```
+
+macOS or Linux:
+
+```bash
+git clone https://github.com/mingjie914/photo-alchemy.git \
+  ~/.codex/skills/photo-alchemy
+```
+
+Start a new task after installation so Codex can discover the Skill.
+
+If you keep a separate development checkout, copy the complete repository folder into the Skills directory only when you want to test that revision. Do not merge two independently edited copies.
+
+### Update
+
+For a clean Git installation on Windows:
+
+```powershell
+git -C "$env:USERPROFILE\.codex\skills\photo-alchemy" pull --ff-only
+```
+
+For macOS or Linux:
+
+```bash
+git -C ~/.codex/skills/photo-alchemy pull --ff-only
+```
+
+If the installed copy contains local edits, compare or preserve them before updating. Do not overwrite them blindly.
+
+### Use
+
+Supply one photograph and choose a path:
 
 ```text
 $photo-alchemy method=abstraction
@@ -71,12 +118,12 @@ $photo-alchemy method=extend
 $photo-alchemy method=reduction
 ```
 
-Natural-language requests are also valid:
+Natural-language requests are equally valid:
 
 ```text
-Use $photo-alchemy to create an abstraction from this photo.
-Use $photo-alchemy to extend this photo into an original material composition.
-Use $photo-alchemy to create a reduction while preserving the action and atmosphere.
+Use $photo-alchemy to create an abstraction from this photograph.
+Use $photo-alchemy to extend this photograph into an original material composition.
+Use $photo-alchemy to create a reduction that preserves its defining relationship.
 ```
 
 During development or comparison, request all methods explicitly:
@@ -85,23 +132,33 @@ During development or comparison, request all methods explicitly:
 $photo-alchemy method=all
 ```
 
-Without a method, the Skill selects one branch from the strongest source evidence: indispensable photographic truth (`extend`), a dominant perceptual event (`abstraction`), or a source-specific relationship that can survive redraw (`reduction`).
+### Other Agent platforms
 
-## Workflow and output
+The creative workflow is carried by the portable `SKILL.md` and relative `references/` files. Agent Skills-compatible platforms may import the folder or a ZIP package according to their own installation process. `agents/openai.yaml` contains OpenAI-specific interface metadata and may be ignored elsewhere.
 
-The Skill:
+## What the Skill returns
 
-1. identifies the essential source relationship, decisive visual facts, visual weight, quiet areas, source anchors, palette opportunities, and removable detail;
-2. resolves a compact method-specific brief for `abstraction`, `extend`, or `reduction`;
-3. compiles the brief into a three-part image prompt covering proposition, method construction, and color/reproduction boundaries;
-4. chooses an adaptive output ratio from the source composition;
-5. generates from the original photograph rather than another method's result;
-6. checks semantic integrity, composition, method separation, and visible defects;
-7. returns the finished raster image with a concise method-specific rationale.
+Each selected method returns:
 
-Each selected method produces one finished raster identified by method, plus a one- or two-sentence rationale in the user's language. The Scene Card, Method Brief, and full generation prompt remain internal unless requested. The Skill adds no title, typography, credits, attribution, metadata, or promotional text unless the user explicitly asks for that content.
+- one finished raster image identified by method;
+- a concise one- or two-sentence artistic rationale in the user's language.
 
-The aim is not to make every photograph grand. It is to find the overlooked relationship that makes this photograph singular.
+The Scene Card, Method Brief, and compiled generation prompt remain internal unless requested. The generated artwork itself adds no title, typography, credits, attribution, metadata, watermark, or promotional text unless the user explicitly asks for that content.
+
+## Creative boundaries
+
+- Preserve relationships before surface detail.
+- Derive composition, color, rhythm, and supporting marks from the supplied photograph.
+- Keep the methods visually and materially independent.
+- Avoid fixed layouts, copied visual signatures, generic AI-painterly styling, hard-coded titles, and decorative filler.
+- Generate every selected method from the original photograph, never from another method's result.
+- Review at normal and thumbnail size, then make at most one targeted correction for a concrete failure.
+
+The aim is not to make every photograph grand. It is to uncover the relation that makes this photograph singular.
+
+## Creator
+
+Photo Alchemy is created and art-directed by **少年老程**. It is an ongoing exploration of how computational image-making can begin with attention, relationship, and visual judgment rather than a preset look.
 
 ## Source handling
 
@@ -118,7 +175,7 @@ Artwork generated with this Skill is intended for personal, educational, researc
 
 This project currently does not use a separate `LICENSE` file. Unless the relevant rights holder grants explicit permission, the repository does not grant rights for commercial use, sale, sublicensing, or commercial redistribution.
 
-## Structure
+## Repository structure
 
 ```text
 photo-alchemy/
@@ -127,6 +184,8 @@ photo-alchemy/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
+├── examples/
+│   └── selected finished artworks
 └── references/
     ├── branches.md
     ├── prompt-compiler.md
@@ -135,6 +194,7 @@ photo-alchemy/
 
 - `SKILL.md`: triggers, shared workflow, and method separation.
 - `references/branches.md`: method-specific creative contracts.
-- `references/prompt-compiler.md`: the shared three-part prompt contract and method-specific material boundaries.
+- `references/prompt-compiler.md`: the shared prompt contract and method-specific material boundaries.
 - `references/review.md`: quality gates and targeted-correction rules.
+- `examples/`: project-owned finished artworks selected to demonstrate current behavior.
 - `agents/openai.yaml`: OpenAI interface metadata.
